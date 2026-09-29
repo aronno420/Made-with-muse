@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made with Muse - Thank You!</title>
+    <!-- Minecraft Style Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Minecraft Loading Screen -->
+    <div id="loading-screen">
+        <div class="mojang-logo">Made with Muse</div>
+        <div class="loading-bar-container">
+            <div id="loading-bar"></div>
+        </div>
+        <div id="splash-text">Loading Terrain...</div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div id="main-content">
+        <header>
+            <h1 class="pixel-text title">Made with Muse🌸</h1>
+            <p class="pixel-text subtitle">Thank You For Your Purchase!</p>
+        </header>
+
+        <div class="game-container">
+            <!-- 3D Character Canvas Container -->
+            <div id="canvas-container">
+                <!-- Hidden Source Text for Speech -->
+                <div id="speech-bubble" style="display:none;">
+                    Thank you for purchasing our product! Scan the QR code to connect with Made with Muse! 🌸 Explore our handmade floral creations crafted for every special moment. ✨
+                </div>
+            </div>
+
+            <!-- Facebook QR Code Section -->
+            <div class="qr-container pixel-box">
+                <h2 class="pixel-text">CONNECT WITH US</h2>
+                <div class="qr-frame">
+                    <img id="qr-image" src="asset/Facebook Share QR.png" alt="Made with Muse Facebook QR Code">
+                </div>
+                
+                <p class="pixel-text qr-instruction">Scan to follow our Facebook page!</p>
+                
+                <button class="minecraft-btn" onclick="speakMessage()">
+                    <span class="btn-text">🔊 Hear Character Again</span>
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p class="pixel-text footer-text">Minecraft Inspired Page Design</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
